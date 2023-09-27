@@ -41,8 +41,8 @@ async def alarm(
     db.row_factory = sqlite3.Row
     cursor = db.cursor()
     cursor.execute("SELECT * FROM alarms WHERE id = ?", (id, ))
-    result = cursor.fetchone()
-    return result
+    alarm = cursor.fetchone()
+    return templates.TemplateResponse('alarm.html', context={'request': request, 'alarm': alarm})
 
 
 @app.post("/alarms")
