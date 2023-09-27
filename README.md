@@ -5,6 +5,8 @@ This sample repo aims shows how to use an SQL data source (sqlite in this case) 
 python's FastAPI in the backend and Tabulator js on the frontend to visualize and filter data
 in a powerful table.
 
+![Tabulator example](tabulator_example.gif)
+
 # How to run the project locally
 This project was intentionally kept simple on the frontend and as such it doesn't require any 
 external javascript library except from tabulator and luxon.js (required by tabulator for date/time
